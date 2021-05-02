@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CameraConfiguration</class>
+ <widget class="QFrame" name="CameraConfiguration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-1</number>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::Box</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Sunken</enum>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Linux Libertine G</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Camera Configuration</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Cancel">
+   <property name="geometry">
+    <rect>
+     <x>514</x>
+     <y>440</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Accept">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>440</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Accept</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Apply">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>440</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>40</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Local Camera</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>40</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Transmition</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>221</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>120</y>
+     <width>221</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>CameraConfiguration</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>563</x>
+     <y>447</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>413</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Accept</sender>
+   <signal>clicked()</signal>
+   <receiver>CameraConfiguration</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>474</x>
+     <y>455</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>405</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Apply</sender>
+   <signal>clicked()</signal>
+   <receiver>CameraConfiguration</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>446</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>frame</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>frame_2</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>frame</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>frame_2</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

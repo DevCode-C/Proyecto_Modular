@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SerialConfiguration</class>
+ <widget class="QWidget" name="SerialConfiguration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>440</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>440</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-color: rgb(85, 255, 255);
+selection-background-color: rgb(85, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="Imagen">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>USB_SYmbol.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Titulo">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Linux Libertine G</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>Serial Configuration</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonCancel">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>430</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VerificaPuertos">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ver puertos disponibles:</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="PuertoSerialDisponible">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+   <property name="minimumContentsLength">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonAccept">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>430</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Accept</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonApply">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>430</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="LIstaBaudRate">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+   <property name="minimumContentsLength">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VerBaudRate">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BaudRate</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonParity">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>250</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Parity</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="ListByteSize">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>210</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+   <property name="minimumContentsLength">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="ListParity">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>290</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+   <property name="minimumContentsLength">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ShowByteSize">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>170</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ByteSize</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Termianal">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>350</y>
+     <width>341</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ButtonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>SerialConfiguration</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>569</x>
+     <y>425</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>626</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonApply</sender>
+   <signal>clicked()</signal>
+   <receiver>SerialConfiguration</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonAccept</sender>
+   <signal>clicked()</signal>
+   <receiver>SerialConfiguration</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>427</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>489</x>
+     <y>376</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VerificaPuertos</sender>
+   <signal>clicked()</signal>
+   <receiver>PuertoSerialDisponible</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>507</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VerBaudRate</sender>
+   <signal>clicked()</signal>
+   <receiver>LIstaBaudRate</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ShowByteSize</sender>
+   <signal>clicked()</signal>
+   <receiver>ListByteSize</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonParity</sender>
+   <signal>clicked()</signal>
+   <receiver>ListParity</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>340</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
